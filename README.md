@@ -1,5 +1,5 @@
 # Testing eduVPN & Let's Connect!
-VPN software can probably only be really tested with real-world users with real-world traffic. But since we also want stress test ourselves, we created (more like hacked together) some scripts to spin up large quantities of LXC-containers that visit the web through eduVPN. 
+VPN software can probably only be really tested with real-world users with real-world traffic. But since we also want to run stress tests ourselves, we created (more like hacked together) some scripts to spin up large quantities of LXC-containers that visit the web through eduVPN. 
 
 All the scripts in this repository are well... hacked together. Don't run these nodes on publically available servers, or even beter: don't run these scripts at all. It's a first try, later it might be more reliable and secure.
 
