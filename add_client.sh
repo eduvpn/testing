@@ -14,25 +14,25 @@
 #############################################################################
 
 # VM SETTINGS
-#VMID='120'						  # VM ID on host
+#VMID='120'             # VM ID on host
 
 # NETWORK SETTINGS
-IPFROM='10.1.2'					# First three octets
-SUBNET='/16'					  # Use CIDR format
-GATEWAY='10.1.0.1'			# Router gateway
-DNS='84.200.69.80'			# Define DNS nameserver or leave empty for host default
-BRIDGE='vmbr1'					# Bridge name in host, i.e. vmbr0
-INTERFACE='eth0'				# Interface name, i.e. eth0
+IPFROM='10.1.2'         # First three octets
+SUBNET='/16'            # Use CIDR format
+GATEWAY='10.1.0.1'      # Router gateway
+DNS='84.200.69.80'      # Define DNS nameserver or leave empty for host default
+BRIDGE='vmbr1'          # Bridge name in host, i.e. vmbr0
+INTERFACE='eth0'        # Interface name, i.e. eth0
 
 # HARDWARE SETTINGS
-CORES='1'						    # Number of vCPU cores
-MEMORY='512'					  # Amount of RAM in MB
-DISKSIZE='4'					  # Disksize in GB
+CORES='1'               # Number of vCPU cores
+MEMORY='512'            # Amount of RAM in MB
+DISKSIZE='4'            # Disksize in GB
 
 # OS SETTINGS
 IMAGE='/var/lib/vz/template/cache/debian-8.0-standard_8.6-1_amd64.tar.gz'
-USERNAME='seve'					# Username
-PASSWORD=''			        # Password for user and root account
+USERNAME='seve'         # Username
+PASSWORD=''             # Password for user and root account
 
 
 #############################################################################
