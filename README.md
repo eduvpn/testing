@@ -12,7 +12,7 @@ Since [LXC containers](https://linuxcontainers.org/) are very lightweight on res
 We use the Debian 8.6.0 LXC container template and configure it with a script. This is all very hacky and is certainly not the way it should be done. The script installs [OpenVPN](https://packages.debian.org/jessie/openvpn) and downloads the eduVPN testenvironment configuration file from a local webserver. It then creates a VPN connection to our server, and executes the web traffic script ([cURL](https://curl.haxx.se/) based).
 
 ## Generating web traffic
-The current web traffic script is really crappy. It is based on an average user that has been recorded with the Chrome Developer Tools (Network -> Record). This recording has been converted to cURL with sleep commands in between to repeat our guinea pig. We want to create a couple of profiles with different behaviours, something like:
+The current web traffic script is really crappy. It is based on an average user that has been recorded with the Chrome Developer Tools (Network -> Record). This recording has been converted to cURL with sleep commands in between to repeat our guinea pig's every move. In the future we would like a couple of profiles with different behaviours, something like:
 
 | User | Description |
 | --- | --- |
