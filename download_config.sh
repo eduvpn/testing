@@ -38,8 +38,8 @@ for ((i=FROM; i<=TO; i++))
         echo "Downloading configuration file $i"
         curl -H "Authorization: Bearer $BEARER" \
         -d "display_name=$i&profile_id=internet" \
-			  -o $SAVEDIR/$i.ovpn \
-        ttps://labrat.eduvpn.nl/portal/api.php/create_config
+	-o $SAVEDIR/$i.ovpn \
+        https://labrat.eduvpn.nl/portal/api.php/create_config
     done
 
 echo
