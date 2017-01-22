@@ -16,20 +16,34 @@
 echo "Enter the ID range of LXC containers that should be stopped:"
 echo
 read -p "$(echo "ID range from:   ")" FROM
-read -p "$(echo "ID range to:     ")" TO   
+read -p "$(echo "ID range to:     ")" TO
 
 
 #############################################################################
-# START NODES
+# VARIABLES
 #############################################################################
 
+TIME=$(expr $TO - $FROM + 5)
+
+
+#############################################################################
+# DELETE NODES
+#############################################################################
+
+# Starting LXC container(s)
+echo
+echo
+echo "STARTING CONTAINERS..."
 for ((i=FROM; i<=TO; i++))
     do
-        echo "Starting LXC container $i"
+        echo "Start container with ID $i"
         pct start $i &
     done
-	
-sleep 10
+
+echo
+echo "Giving the host some time..."
+echo
+sleep $TIME
 
 echo
 echo "Done!"
