@@ -14,7 +14,7 @@
 #############################################################################
 
 # HARDWARE SETTINGS
-CORES='1'						  # Number of vCPU cores
+CORES='1'                                       # Number of vCPU cores
 MEMORY='512'					# Amount of RAM in MB
 DISKSIZE='4'					# Disksize in GB
 
@@ -23,13 +23,13 @@ IMAGE='/var/lib/vz/template/cache/debian-8.0-standard_8.6-1_amd64.tar.gz'
 
 # OPERATING SYSTEM SETTINGS
 USERNAME='seve'					# Username
-PASSWORD='rundll32'			# Password for user and root account
+PASSWORD='password'			        # Password for user and root account
 
 # NETWORK SETTINGS
 IPFROM='10.1.2'					# First three octets of IP-range (e.g. 192.168.1)
-SUBNET='/16'					  # Use CIDR format (e.g. /16)
-GATEWAY='10.1.0.1'			# Router gateway (e.g. 192.168.0.1)
-DNS='84.200.69.80'			# Define DNS nameserver (e.g. 84.200.69.80)
+SUBNET='/16'					# Use CIDR format (e.g. /16)
+GATEWAY='10.1.0.1'			        # Router gateway (e.g. 192.168.0.1)
+DNS='84.200.69.80'			        # Define DNS nameserver (e.g. 84.200.69.80)
 BRIDGE='vmbr1'					# Bridge name in host (e.g. vmbr0)
 INTERFACE='eth0'				# Interface name (e.g. eth0)
 
