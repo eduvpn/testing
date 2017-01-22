@@ -36,12 +36,13 @@ echo
 echo "STOPPING CONTAINERS..."
 for ((i=FROM; i<=TO; i++))
     do
-        echo "Stop container ID $i"
+        echo "Stop container with ID $i"
         pct stop $i &
     done
 
 echo
 echo "Giving the host some time..."
+echo
 sleep $TIME
 
 # Destroying LXC containers
@@ -49,12 +50,13 @@ echo
 echo "DESTROYING CONTAINERS..."
 for ((i=FROM; i<=TO; i++))
     do
-        echo "Destroying LXC container $i"
+        echo "Destroy container with ID $i"
         pct destroy $i &
     done
 
 echo
 echo "Giving the host some more time..."
+echo
 sleep $TIME
 
 echo
