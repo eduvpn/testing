@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############################################################################
-# Version 1.0.0-alpha.1 (22-01-2017)
+# Version 1.0.0-alpha.2 (22-01-2017)
 #############################################################################
 
 #############################################################################
@@ -43,7 +43,8 @@ for ((i=FROM; i<=TO; i++))
 echo
 echo "Giving the host some time..."
 echo
-sleep $TIME
+#sleep $TIME
+wait
 
 # Destroying LXC containers
 echo
@@ -57,7 +58,8 @@ for ((i=FROM; i<=TO; i++))
 echo
 echo "Giving the host some more time..."
 echo
-sleep $TIME
+#sleep $TIME
+wait
 
 echo
 echo "Done!"
