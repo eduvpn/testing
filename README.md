@@ -25,7 +25,7 @@ The current traffic script is really crappy. It is based on an average user that
 ## Setting up container environment
 You should have a properly configured Proxmox host setup in order for these scripts to work. Maybe later we will also make a more universal version of the scripts.
 
-There are two kinds of nodes, client nodes and controller nodes. Client nodes can have one of the aforementioned profiles.
+There are three kinds of nodes, client nodes, webserver nodes and controller nodes. Client nodes can have one of the aforementioned profiles.
 
 1. Create controller node<br>Configure (variables in script) and run `create_controller_node.sh`. This node will control all the client nodes, so you will be executing commands and scripts primarily from this node. It is advisable to give it some more resources than the client nodes. In our tests 1 core with 512 MB of memory per 125-150 nodes works fine. You should also make the parallel-ssh hosts files now.
 2. Create webserver node<br>Configure (variables in script) and run `create_webserver_node.sh`. This node wil host all the configuration files, scripts etc. for the client nodes to download. The webserver mostly consists of really small files, so a simple machine with 1 core and 512 MB of memory will suffice more than fine.
